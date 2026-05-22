@@ -26,13 +26,13 @@ Law4u/
 ### 🤖 Telegram Chatbot (`Chatbot.py`)
 An AI-powered chatbot that answers questions about the Singapore legal system.
 
-- Powered by **Claude (Anthropic)** with live web search
+- Powered by **OpenAI GPT-4o** with live web search
 - Responses are grounded in official Singapore government sources:
   - [Singapore Statutes Online (SSO)](https://sso.agc.gov.sg)
-  - [Singapore Judiciary](https://www.judiciary.gov.sg)
   - [Attorney-General's Chambers](https://www.agc.gov.sg)
+  - [Singapore Judiciary](https://www.judiciary.gov.sg)
   - [Ministry of Law](https://www.mlaw.gov.sg)
-  - [CPIB](https://www.cpib.gov.sg)
+  - [Legal Aid Bureau](https://www.lab.mlaw.gov.sg)
 - Cites specific Acts, section numbers, and penal codes in every response
 - Refuses to speculate or answer questions outside Singapore law
 - Reminds users to seek professional legal advice where appropriate
@@ -59,7 +59,7 @@ High-fidelity mockups built in Adobe XD covering the full user experience of the
 ### Prerequisites
 - Python 3.10+
 - A [Telegram Bot Token](https://core.telegram.org/bots/tutorial) from BotFather
-- An [Anthropic API Key](https://console.anthropic.com)
+- An [OpenAI Key](https://platform.openai.com/api-keys)
 
 ### Installation
 
@@ -79,7 +79,7 @@ High-fidelity mockups built in Adobe XD covering the full user experience of the
    Create a `.env` file in the project root:
    ```env
    TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
-   ANTHROPIC_API_KEY=your_anthropic_api_key_here
+   OPENAI_API_KEY=your_openAI_api_key_her
    ```
 
 4. **Run the bot**
@@ -89,21 +89,11 @@ High-fidelity mockups built in Adobe XD covering the full user experience of the
 
 ---
 
-## 🔐 Environment Variables
-| Variable | Description |
-|---|---|
-| `TELEGRAM_BOT_TOKEN` | Token from Telegram's BotFather |
-| `ANTHROPIC_API_KEY` | API key from [console.anthropic.com](https://console.anthropic.com) |
-
-An `.env` template is included in the repository. Fill in your own values — never commit your actual `.env` file.
-
----
-
 ## 🛠️ Tech Stack
 | Layer | Technology |
 |---|---|
 | Chatbot | Python, `python-telegram-bot` |
-| AI / LLM | Anthropic Claude (`claude-sonnet-4`) with web search |
+| AI / LLM | OpenAI GPT-4o |
 | Android App | Kotlin |
 | UI Design | Adobe XD |
 
